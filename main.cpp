@@ -26,7 +26,7 @@ void gameText() {
 }
 
 void entrance() {
-    cout<<"\nYou found your way into an abandoned warehouse."<<endl;
+    cout<<"\nYou found your way into an abandoned house."<<endl;
     cout<<"Right in front of you is a hallway which leads \nstraight ahead, a staircase to 2nd floor on the \nright and a door to a room to left"<<endl;
 
     cout<<"\nType a number with keypad to choose path: "<<endl;
@@ -41,7 +41,7 @@ void entrance() {
     int num[3] = {1,2,3};
     //cout<<num[0]"the array is workring<<endl;
     if(input == num[0]) {
-        cout<<"You choose 1 and decided to go down the hallway."<<endl;
+        cout<<"\nYou choose 1 and decided to go down the hallway."<<endl;
     } else if(input == num[1]) {
         cout<<"You choose 2 and decide to take the staircase."<<endl;
     } else if(input ==num[2]) {
@@ -53,6 +53,11 @@ void entrance() {
 void hallway() {
     cout<<"\nYou walk down the hallway and see a table in the middle with a lighter, fuel, and club wrapped in cloth"<<endl;
     cout<<"Under the table there is a rug, to left is storage room which has a door on it. and on the right is a small kitchen"<<endl;
+    cout<<"\nwhat would you like to do first?"<<endl;
+    cout<<"\n1.\tExamine the rug"<<endl;
+    cout<<"2.\tTake lighter"<<endl;
+    cout<<"3.\tGrab fuel"<<endl;
+    cout<<"4.\tTake club with cloth wrapped around it"<<endl;
 }
 //main body-------------------------------------------------------------------------------
 int main () {
