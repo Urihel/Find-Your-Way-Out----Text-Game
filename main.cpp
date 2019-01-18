@@ -11,7 +11,7 @@ void gameMenu() {
 void startGame() {
     gameMenu();
 
-    cout<<"\nEnter Number: "<<flush;
+    cout<<"Enter Number: "<<flush;
     int input;
     cin>> input;
 
@@ -54,8 +54,8 @@ void entrance() {
 }
 //------------------------------------------------
 void hallway() {
-    cout<<"\nYou walk down the hallway and see a table in the middle with a lighter, fuel, and club wrapped in cloth"<<endl;
-    cout<<"Under the table there is a rug, on top of the table is a lighter, fuel-can, unlit torch"<<endl;
+    cout<<"\nYou walk down the hallway and see a table in the middle with a lighter, fuel, and an unlit torch"<<endl;
+    cout<<"Under the table there is a rug."<<endl;
     cout<<"\nwhat would you like to do first?"<<endl;
     cout<<"\n1.\tExamine the rug"<<endl;
     cout<<"2.\tTake lighter"<<endl;
