@@ -50,10 +50,15 @@ void entrance() {
 
 
 }
+void hallway() {
+    cout<<"\nYou walk down the hallway and see a table in the middle with a lighter, fuel, and club wrapped in cloth"<<endl;
+    cout<<"Under the table there is a rug, to left is storage room which has a door on it. and on the right is a small kitchen"<<endl;
+}
 //main body-------------------------------------------------------------------------------
 int main () {
     gameText();
     startGame();
     entrance();
+    hallway();
 }
 
