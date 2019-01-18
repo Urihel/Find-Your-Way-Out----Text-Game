@@ -28,10 +28,27 @@ void gameText() {
 void entrance() {
     cout<<"\nYou found your way into an abandoned warehouse."<<endl;
     cout<<"Right in front of you is a hallway which leads \nstraight ahead, a staircase to 2nd floor on the \nright and a door to a room to left"<<endl;
-    cout<<"\nType a number with keypad to choose path"<<endl;
-    cout<<"1.\tGo down hallway"<<endl;
+
+    cout<<"\nType a number with keypad to choose path: "<<endl;
+
+    cout<<"\n1.\tGo down hallway"<<endl;
     cout<<"2.\tTake staircase to second floor"<<endl;
     cout<<"3.\tOpen door on the left"<<endl;
+
+    int input;
+    cin>>input;
+
+    int num[3] = {1,2,3};
+    //cout<<num[0]"the array is workring<<endl;
+    if(input == num[0]) {
+        cout<<"You choose 1 and decided to go down the hallway."<<endl;
+    } else if(input == num[1]) {
+        cout<<"You choose 2 and decide to take the staircase."<<endl;
+    } else if(input ==num[2]) {
+        cout<<"Your chose 3 and decided to take the door to the left of you"<<endl;
+    }
+
+
 }
 //main body-------------------------------------------------------------------------------
 int main () {
