@@ -6,6 +6,20 @@ void backToEntrance(){
     cout<<"What's on your mind?"<<endl;
     cout<<"1.\tOpen door"<<endl;
     cout<<"2.\tWalk down hallway"<<endl;
+    int input;
+    cin>>input;
+    if(input == 1) {
+        cout<<"\nYou chose to open the door. When you attempt to open the door its locked."<<endl;
+        cout<<"do you want to use your key?"<<endl;
+        cout<<"1.\tYes"<<endl;
+        cout<<"2.\tNo"<<endl;
+        int input;
+        cin>>input;
+            if(input == 1) {
+                cout<<"\nYou use the key on the door and it opens up for you."<<endl;
+                cout<<"There is a crow bar on the floor"<<endl;
+            }
+    }
 }
 //-----------------------------------------------
 void stairCase(){
