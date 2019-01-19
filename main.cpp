@@ -7,7 +7,7 @@ void backToEntrance(){
     cout<<"1.\tOpen door"<<endl;
     cout<<"2.\tWalk down hallway"<<endl;
 }
-
+//-----------------------------------------------
 void stairCase(){
     cout<<"\nYou walk up the stairs. As you walk you notice the lights are flickering. You continue up anyway. When \nyou reach the top, there is a room facing you with a sign saying keep out!" <<endl;
     cout<<"\nWhat would you like to do?"<<endl;
