@@ -11,10 +11,21 @@ void stairCase(){
     cin>>input;
 
     if(input == 1) {
-        cout<<"You open the door and find a key on the floor."<<endl;
+        cout<<"\nYou open the door and find a key on the floor."<<endl;
         cout<<"Do you want to pick up the key y/n ?"<<endl;
         cout<<"1.\tYes"<<endl;
         cout<<"2.\tNo"<<endl;
+        int input;
+        cin>>input;
+        if(input == 1) {
+            cout<<"You grab the key, put it in your pocket and head back downstairs"<<endl;
+        }
+    } else if(input == 2) {
+        cout<<"You head back downstairs, and are back in the main entrance."<<endl;
+        cout<<"What would you like to do?"<<endl;
+        cout<<"\n1.\tGo down hallway"<<endl;
+        cout<<"2.\tTake staircase to second floor"<<endl;
+        cout<<"3.\tOpen door on the left"<<endl;
     }
 }
 //--------------------------------------
