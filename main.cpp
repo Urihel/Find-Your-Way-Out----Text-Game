@@ -1,6 +1,12 @@
 #include <iostream>
 
 using namespace std;
+void backToEntrance(){
+    cout<<"\nYou're back to where you first started. Since nothing else is upstairs. The door to left is still to open \nand you have your hallway."<<endl;
+    cout<<"What's on your mind?"<<endl;
+    cout<<"1.\tOpen door"<<endl;
+    cout<<"2.\tWalk down hallway"<<endl;
+}
 
 void stairCase(){
     cout<<"\nYou walk up the stairs. As you walk you notice the lights are flickering. You continue up anyway. When \nyou reach the top, there is a room facing you with a sign saying keep out!" <<endl;
@@ -19,6 +25,7 @@ void stairCase(){
         cin>>input;
         if(input == 1) {
             cout<<"You grab the key, put it in your pocket and head back downstairs"<<endl;
+            backToEntrance();
         }
     } else if(input == 2) {
         cout<<"You head back downstairs, and are back in the main entrance."<<endl;
