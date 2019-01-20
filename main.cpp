@@ -18,7 +18,17 @@ void backToEntrance(){
             if(input == 1) {
                 cout<<"\nYou use the key on the door and it opens up for you."<<endl;
                 cout<<"There is a crow bar on the floor"<<endl;
+                cout<<"Would you like to pick it up"<<endl;
+                cout<<"1.\tYes"<<endl;
+                cout<<"2.\tNo"<<endl;
+                int input;
+                cin>>input;
+
             }
+    }else if(input == 2) {
+        cout<<"\nYou selected 2 and decide to walk down the hallway"<<endl;
+        cout<<"\nYour at the middle of the hallway. There is and empty table, with trap door underneath."<<endl;
+        cout<<"The door is missing a handle to open it, a crowbar might help"<<endl;
     }
 }
 //-----------------------------------------------
@@ -62,7 +72,7 @@ void startGame() {
     cin>> input;
 
     if(input == 1) {
-        cout<<"starting game"<<endl;
+        cout<<"starting game............"<<endl;
     }
 }
 //--------------------------------------
