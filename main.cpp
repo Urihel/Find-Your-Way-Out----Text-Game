@@ -1,6 +1,52 @@
 #include <iostream>
 
 using namespace std;
+
+void theDungeon() {
+    cout<<"Would you like use the lighter, fuel can, and unlit torch you found earlier to see in the dark."<<endl;
+    cout<<"1.\tYes"<<endl;
+    cout<<"2.\tNo"<<endl;
+    int input;
+    cin>>input;
+    if(input == 1) {
+        cout<<"You combine all your items together and you light the torch up."<<endl;
+        cout<<"When you light the torch up. You see a door this partially open. It might be the way out."<<endl;
+        cout<<"Would you like to open the door."<<endl;
+        cout<<"1.\tYes"<<endl;
+        cout<<"2.\tNo"<<endl;
+        int input;
+        cin>>input;
+        if(input == 1) {
+            cout<<"You open the door and find your way out. You are now out of the house Congratulations you've beaten the game"<<endl;
+        }
+    }
+}
+
+void exitRoom () {
+    cout<<"You have now picked up the crowbar. Would you like exit back to hallway?"<<endl;
+    cout<<"1.\tYes"<<endl;
+    cout<<"2.\tNo"<<endl;
+    int input;
+    cin>>input;
+    if(input == 1) {
+        cout<<"You exit the room and are now back at the main hallway."<<endl;
+        cout<<"Since everything is complete the only place to check is the hallway."<<endl;
+        cout<<"Would you like to go there now?"<<endl;
+        cout<<"1.\tYes"<<endl;
+        cout<<"2.\tNo"<<endl;
+        int input;
+        cin>>input;
+        if(input == 1 ){
+            cout<<"You chose hallway and you begin walking down it. The trap door under the table is needs something"<<endl;
+            cout<<"to open the it. Would you like to use you crowbar?"<<endl;
+            cout<<"1.\tYes"<<endl;
+            cout<<"You open the trap door and go into a dungeon. Its dark inside. we could use something to light it up."<<endl;
+            theDungeon();
+        }
+        //------------------------------------------where the else if goes
+    }
+}
+
 void backToEntrance(){
     cout<<"\nYou're back to where you first started. Since nothing else is upstairs. The door to left is still to open \nand you have your hallway."<<endl;
     cout<<"What's on your mind?"<<endl;
@@ -24,6 +70,7 @@ void backToEntrance(){
                 int input;
                 cin>>input;
 
+                exitRoom();
             }
     }else if(input == 2) {
         cout<<"\nYou selected 2 and decide to walk down the hallway"<<endl;
